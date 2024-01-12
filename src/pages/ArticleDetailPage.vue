@@ -12,7 +12,17 @@
                 </p>
             </div>
             <div class="paragraph">
-                <!-- <h5>Introduction of Resdis</h5> -->
+                <h5>Introduction of Resdis</h5>
+                <p class="mx-2">
+                    Automatic assembly means that spring automatically assembles its own (such as the dispatchservlet of MVC) and third-party (such as mybatis) beans into the IOC container to achieve mutual injection between beans and complete the relevant configuration. @ EnableAutoConfiguration under @ SpringBoot Application annotation, Inject the implementation of ImportSelector class through @ Import (AutoConfiguration ImportSelector. Class), and then dig deeper to find the following figure:
+                </p>
+            </div>
+            <div class="paragraph">
+                <p class="mx-2">
+                    Automatic assembly means that spring automatically assembles its own (such as the dispatchservlet of MVC) and third-party (such as mybatis) beans into the IOC container to achieve mutual injection between beans and complete the relevant configuration. @ EnableAutoConfiguration under @ SpringBoot Application annotation, Inject the implementation of ImportSelector class through @ Import (AutoConfiguration ImportSelector. Class), and then dig deeper to find the following figure:
+                </p>
+            </div>
+            <div class="paragraph">
                 <p class="mx-2">
                     Automatic assembly means that spring automatically assembles its own (such as the dispatchservlet of MVC) and third-party (such as mybatis) beans into the IOC container to achieve mutual injection between beans and complete the relevant configuration. @ EnableAutoConfiguration under @ SpringBoot Application annotation, Inject the implementation of ImportSelector class through @ Import (AutoConfiguration ImportSelector. Class), and then dig deeper to find the following figure:
                 </p>
@@ -24,25 +34,11 @@
                 </p>
             </div>
             <div class="paragraph">
-                <!-- <h5>Introduction of Resdis</h5> -->
                 <p class="mx-2">
                     Automatic assembly means that spring automatically assembles its own (such as the dispatchservlet of MVC) and third-party (such as mybatis) beans into the IOC container to achieve mutual injection between beans and complete the relevant configuration. @ EnableAutoConfiguration under @ SpringBoot Application annotation, Inject the implementation of ImportSelector class through @ Import (AutoConfiguration ImportSelector. Class), and then dig deeper to find the following figure:
                 </p>
             </div>
             <div class="paragraph">
-                <!-- <h5>Introduction of Resdis</h5> -->
-                <p class="mx-2">
-                    Automatic assembly means that spring automatically assembles its own (such as the dispatchservlet of MVC) and third-party (such as mybatis) beans into the IOC container to achieve mutual injection between beans and complete the relevant configuration. @ EnableAutoConfiguration under @ SpringBoot Application annotation, Inject the implementation of ImportSelector class through @ Import (AutoConfiguration ImportSelector. Class), and then dig deeper to find the following figure:
-                </p>
-            </div>
-            <div class="paragraph">
-                <!-- <h5>Introduction of Resdis</h5> -->
-                <p class="mx-2">
-                    Automatic assembly means that spring automatically assembles its own (such as the dispatchservlet of MVC) and third-party (such as mybatis) beans into the IOC container to achieve mutual injection between beans and complete the relevant configuration. @ EnableAutoConfiguration under @ SpringBoot Application annotation, Inject the implementation of ImportSelector class through @ Import (AutoConfiguration ImportSelector. Class), and then dig deeper to find the following figure:
-                </p>
-            </div>
-            <div class="paragraph">
-                <!-- <h5>Introduction of Resdis</h5> -->
                 <p class="mx-2">
                     Automatic assembly means that spring automatically assembles its own (such as the dispatchservlet of MVC) and third-party (such as mybatis) beans into the IOC container to achieve mutual injection between beans and complete the relevant configuration. @ EnableAutoConfiguration under @ SpringBoot Application annotation, Inject the implementation of ImportSelector class through @ Import (AutoConfiguration ImportSelector. Class), and then dig deeper to find the following figure:
                 </p>
@@ -50,18 +46,17 @@
         </div>
     </div>
 </template>
+
 <script>
-import { ref } from 'vue'
-export default {
-    name: "ArticleDetailPage333",
-    setup(){
-        return {
+    export default {
+        name: "ArticleDetailPage",
+        props: ["articleId"],
+        setup(){
             
         }
     }
-    
-}
 </script>
+
 <style lang="css" scoped>
     .title{
         color: black;

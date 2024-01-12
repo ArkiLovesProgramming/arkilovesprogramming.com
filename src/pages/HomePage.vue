@@ -1,15 +1,14 @@
 <template>
     <div>
         <PicProfile/>
-        <PicProfile/>
         <MyInfo/>
         <ArticlePreview/>
     </div>
 </template>
 <script>
-    import PicProfile from "./PicProfile.vue"
-    import MyInfo from "./MyInfo.vue"
-    import ArticlePreview from "./ArticlePreview.vue"
+    import PicProfile from "../components/PicProfile.vue"
+    import MyInfo from "../components/MyInfo.vue"
+    import ArticlePreview from "../components/ArticlePreview.vue"
     export default {
         name: "HomePage",
         components: {

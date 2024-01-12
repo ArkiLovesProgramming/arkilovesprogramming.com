@@ -6,7 +6,8 @@
         </el-header>
         <el-main class="container">
           <!-- <HomePage/> -->
-          <ArticleDetailPage/>
+          <!-- <ArticleDetailPage/> -->
+          <router-view></router-view>
         </el-main>
         <el-footer>
           <PbFooter/>
@@ -17,19 +18,15 @@
 
 <script>
   import PbHeader from "./components/PbHeader.vue"
-  // import HomePage from "./components/HomePage.vue"
-  // import PbArticle from "./components/PbArticle.vue"
-  import ArticleDetailPage from "./components/ArticleDetailPage.vue";
   import PbFooter from "./components/PbFooter.vue"
-  // import { computed, ref } from 'vue'
   export default {
     name: 'App',
     components: {
       PbHeader,
-      // HomePage,
-      // PbArticle,
-      ArticleDetailPage,
       PbFooter
+    },
+    setup(){
+
     }
     
   }
