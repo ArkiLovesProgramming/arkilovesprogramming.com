@@ -5,28 +5,23 @@ jobs:
   build: 
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: running npm ci
-        run: npm ci
-      - name: building npm
-        run: npm run build
-      # - uses: shallwefootball/s3-upload-action@master
+      - run: echo "${{ secrets.AWS_KEY_ID }} and ${{ secrets.AWS_SECRET_ACCESS_KEY }}"
+      # - uses: actions/checkout@v3
+      # - name: running npm ci
+      #   run: npm ci
+      # - name: building npm
+      #   run: npm run build
+      # - name: Configure AWS credentials
+      #   uses: aws-actions/configure-aws-credentials@v1
       #   with:
-      #     aws_key_id: ${{ secrets.AWS_KEY_ID }}
-      #     aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      #     aws_bucket: ${{ secrets.AWS_BUCKET }}
-      #     source_dir: '/dist'
-      - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          aws-access-key-id: AKIA4TWN5WZSIIP7KM6Q
-          aws-secret-access-key: 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
-          aws-region: ca-central-1
-      - name: Deploy static files to AWS S3
-        id: aws-deploy-s3
-        uses: oneyedev/aws-deploy-s3@v2
-        with:
-          region: ca-central-1
-          bucket: arkilovesprogramming.com
-          source: /dist
-          target: /
+      #     aws-access-key-id: ${{ secrets.AWS_KEY_ID }}
+      #     aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      #     aws-region: ca-central-1
+      # - name: Deploy static files to AWS S3
+      #   id: aws-deploy-s3
+      #   uses: oneyedev/aws-deploy-s3@v2
+      #   with:
+      #     region: ca-central-1
+      #     bucket: arkilovesprogramming.com
+      #     source: /dist
+      #     target: /
