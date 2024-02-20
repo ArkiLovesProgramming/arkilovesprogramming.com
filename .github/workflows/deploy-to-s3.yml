@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: running npm ci
-        uses: npm ci
+        run: npm ci
       - name: uploading dist directory
         uses: actions/upload-artifact@v3
         with: 
