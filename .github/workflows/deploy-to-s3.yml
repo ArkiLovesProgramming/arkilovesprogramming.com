@@ -27,6 +27,6 @@ jobs:
         uses: oneyedev/aws-deploy-s3@v2
         with:
           region: ca-central-1
-          bucket: ${{ secrets.AWS_BUCKET }}
+          bucket: arkilovesprogramming.com
           source: /dist
           target: /
