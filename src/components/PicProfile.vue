@@ -6,11 +6,21 @@
             Arki loves programming, Arki loves Alisha
         </el-text>
         <div class="contact">
-            <img class="" src="../assets/github-mark.png" alt="GitHub">
-            <img class="" src="../assets/gmail_icon.png" alt="Gmail">
-            <img class="x" src="../assets/x.png" alt="X">
-            <img class="wechat-icon" src="../assets/wechat-icon.png" alt="WeChat">
-            <img class="" src="../assets/linked.png" alt="Linked">
+            <a href="https://github.com/ArkiLovesProgramming" target="_blank"><img class="" src="../assets/github-mark.png" alt="GitHub"></a>
+            <el-popover
+                placement="bottom"
+                title="Gmail"
+                :width="200"
+                trigger="click"
+                content="betaweiwang@gmail.com"
+            >
+                <template #reference>
+                    <a href="mailto:betaweiwang@gmail.com" target="_top"><img class="" src="../assets/gmail_icon.png" alt="Gmail"></a>
+                </template>
+            </el-popover>
+            <!-- <img class="x" src="../assets/x.png" alt="X"> -->
+            <a :href="wechat_qrcode_url" target="_blank"><img class="wechat-icon" src="../assets/wechat-icon.png" alt="WeChat"></a>
+            <a href="https://www.linkedin.com/in/arkilovesprogramming/" target="_blank"><img class="" src="../assets/linked.png" alt="Linked"></a>
         </div>
     </div>
 </template>
@@ -19,8 +29,12 @@
         name: "PicProfile",
         setup(){
             const profilepic = "https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png";
+
+            const wechat_qrcode_url = require('@/assets/wechat_qrcode.jpg');
+
             return {
                 profilepic,
+                wechat_qrcode_url
             }
         }
     }

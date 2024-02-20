@@ -1,0 +1,16 @@
+name: deploy-to-s3
+run-name: ${{ github.actor }} is deploying static website file to s3
+on: [push]
+jobs: 
+  build: 
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: running npm ci
+        uses: npm ci
+      - name: uploading dist directory
+        uses: actions/upload-artifact@v3
+        with: 
+          name: dist-files
+          path: |
+            dist

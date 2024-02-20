@@ -2,7 +2,7 @@
     <div class="PbFooter">
         <el-text class="mx-1">
             Arkilovesprogramming - 2022 🖥️ <br/>
-            Built with Vue3, Element UI, Bootstrap5...
+            Built with Vue3, Element UI, AWS, Bootstrap5...
         </el-text>
     </div>
 </template>
