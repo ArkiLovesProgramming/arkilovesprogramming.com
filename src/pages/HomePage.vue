@@ -1,6 +1,7 @@
 <template>
     <div>
         <PicProfile/>
+        <BadgesShow/>
         <MyInfo/>
         <ArticlePreview/>
     </div>
@@ -9,12 +10,14 @@
     import PicProfile from "../components/PicProfile.vue"
     import MyInfo from "../components/MyInfo.vue"
     import ArticlePreview from "../components/ArticlePreview.vue"
+    import BadgesShow from "../components/Badges.vue"
     export default {
         name: "HomePage",
         components: {
             PicProfile,
             MyInfo,
-            ArticlePreview
+            ArticlePreview,
+            BadgesShow
         }
     }
 </script>

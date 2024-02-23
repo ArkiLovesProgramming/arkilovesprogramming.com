@@ -1,9 +1,11 @@
 <template>
     <div class="PicProfile">
-        <el-avatar class="shadow-lg" :size="88" :src="profilepic" />
+        <p class="text1">Hi, I'm Arki! 👋</p>
+        <el-avatar class="shadow-lg mb-4" :size="88" :src="arki_profile_pic" />
         <br>
-        <el-text class="mx-1 mt-4 mb-1" size="large" truncated>
-            Arki loves programming, Arki loves Alisha
+        <p class="text2">An Experienced Full-Stack Web Developer 🧑‍💻</p>
+        <el-text class="mx-1 mb-1" size="large" line-clamp="3">
+Graduated from Memorial University of Newfoundland with a Master's degree in Computer Science. Mastered full-stack web project development skills, including front-end framework development (Vue, React), back-end API development (Java, Python), and automation deployment CI/CD. Accumulated 5 years of Java development experience, rich in work and project exposure. Worked within agile development teams, possessing a keen awareness of agile methodologies. Experienced in cloud development (AWS, GCP, Azure).
         </el-text>
         <div class="contact">
             <a href="https://github.com/ArkiLovesProgramming" target="_blank"><img class="" src="../assets/github-mark.png" alt="GitHub"></a>
@@ -31,10 +33,12 @@
             const profilepic = "https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png";
 
             const wechat_qrcode_url = require('@/assets/wechat_qrcode.jpg');
+            const arki_profile_pic = require('@/assets/arki_profile_pic.jpg')
 
             return {
                 profilepic,
-                wechat_qrcode_url
+                wechat_qrcode_url,
+                arki_profile_pic
             }
         }
     }
@@ -58,5 +62,13 @@
     .contact .wechat-icon{
         width: 25px;
         height: 25px;
+    }
+    .text1{
+        font-size: 26px;
+        font-weight: bolder;
+    }
+    .text2{
+        font-size: 20px;
+        font-weight: bold;
     }
 </style>

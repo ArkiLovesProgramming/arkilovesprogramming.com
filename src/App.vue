@@ -65,4 +65,7 @@
   width: 100%;
   align-items: center;
 }
+body{
+  font-family: MD Primer Bold,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
+}
 </style>
