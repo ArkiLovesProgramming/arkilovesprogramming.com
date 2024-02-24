@@ -1,6 +1,6 @@
 <template>
     <div class="ArticlePreview">
-        <h4>Article Preview</h4>
+        <h4 class="hp_title">Article Preview</h4>
         <div class="content">
             <ul>
                 <li>

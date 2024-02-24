@@ -1,7 +1,7 @@
 <template>
     <div class="MyInfo">
         <!-- <el-text class="" size="large">My experience</el-text> -->
-        <h4>My experience</h4>
+        <h4 class="hp_title">My experience</h4>
         <div class="content">
             <ul>
                 <li><el-text class="" siz>Involved in the development and iteration of the company's product A8+ Collaboration Management Platform (a multi- platform automated office system), fixing hundreds of customer bugs for the company.</el-text></li>

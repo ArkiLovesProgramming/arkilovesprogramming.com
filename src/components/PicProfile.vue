@@ -4,11 +4,11 @@
         <el-avatar class="shadow-lg mb-4" :size="88" :src="arki_profile_pic" />
         <br>
         <p class="text2">An Experienced Full-Stack Web Developer 🧑‍💻</p>
-        <el-text class="mx-1 mb-1" size="large" line-clamp="3">
+        <el-text class="mx-1 mb-1" size="default" line-clamp="3">
 Graduated from Memorial University of Newfoundland with a Master's degree in Computer Science. Mastered full-stack web project development skills, including front-end framework development (Vue, React), back-end API development (Java, Python), and automation deployment CI/CD. Accumulated 5 years of Java development experience, rich in work and project exposure. Worked within agile development teams, possessing a keen awareness of agile methodologies. Experienced in cloud development (AWS, GCP, Azure).
         </el-text>
         <div class="contact">
-            <a href="https://github.com/ArkiLovesProgramming" target="_blank"><img class="" src="../assets/github-mark.png" alt="GitHub"></a>
+            <a class="hoover_scale" href="https://github.com/ArkiLovesProgramming" target="_blank"><img class="" src="../assets/github-mark.png" alt="GitHub"></a>
             <el-popover
                 placement="bottom"
                 title="Gmail"
@@ -17,12 +17,12 @@ Graduated from Memorial University of Newfoundland with a Master's degree in Com
                 content="betaweiwang@gmail.com"
             >
                 <template #reference>
-                    <a href="mailto:betaweiwang@gmail.com" target="_top"><img class="" src="../assets/gmail_icon.png" alt="Gmail"></a>
+                    <a class="hoover_scale" href="mailto:betaweiwang@gmail.com" target="_top"><img class="" src="../assets/gmail_icon.png" alt="Gmail"></a>
                 </template>
             </el-popover>
             <!-- <img class="x" src="../assets/x.png" alt="X"> -->
-            <a :href="wechat_qrcode_url" target="_blank"><img class="wechat-icon" src="../assets/wechat-icon.png" alt="WeChat"></a>
-            <a href="https://www.linkedin.com/in/arkilovesprogramming/" target="_blank"><img class="" src="../assets/linked.png" alt="Linked"></a>
+            <a class="hoover_scale" :href="wechat_qrcode_url" target="_blank"><img class="wechat-icon" src="../assets/wechat-icon.png" alt="WeChat"></a>
+            <a class="hoover_scale" href="https://www.linkedin.com/in/arkilovesprogramming/" target="_blank"><img class="" src="../assets/linked.png" alt="Linked"></a>
         </div>
     </div>
 </template>
@@ -62,6 +62,9 @@ Graduated from Memorial University of Newfoundland with a Master's degree in Com
     .contact .wechat-icon{
         width: 25px;
         height: 25px;
+    }
+    .contact .hoover_scale{
+        display: inline-block;
     }
     .text1{
         font-size: 26px;

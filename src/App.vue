@@ -68,4 +68,17 @@
 body{
   font-family: MD Primer Bold,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
 }
+
+.hoover_scale{
+  transition: transform 0.1s;
+}
+
+.hoover_scale:hover{
+  transform: scale(1.05, 1.05);
+  cursor: pointer;
+}
+.hp_title:before{
+  content: "# ";
+  color: #409EFF;
+}
 </style>
