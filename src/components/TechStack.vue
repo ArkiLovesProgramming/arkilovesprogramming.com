@@ -92,7 +92,7 @@
                         <p>Bootstrap</p>
                     </div>
                     <div class="tech_stack_icon hoover_scale">
-                        <img style="width: min-content;" src="../assets/TeckIcons/ElementUI.jpg" alt="ElementUI">
+                        <img style="width: auto;" src="../assets/TeckIcons/ElementUI.jpg" alt="ElementUI">
                         <p>ElementUI</p>
                     </div>
                     <div class="tech_stack_icon hoover_scale">
@@ -147,7 +147,7 @@
                         <p>Scrum</p>
                     </div>
                     <div class="tech_stack_icon hoover_scale">
-                        <img style="width: fit-content;" src="../assets/TeckIcons/kafka.png" alt="Kafka">
+                        <img style="width: auto;" src="../assets/TeckIcons/kafka.png" alt="Kafka">
                         <p>Kafka</p>
                     </div>
                 </div>
@@ -176,6 +176,7 @@ export default {
         height: 75px;
         margin: 10px;
         text-align: center;
+        /* box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset; */
     }
     .tech_stack_icon p{
         font-size: 13px;

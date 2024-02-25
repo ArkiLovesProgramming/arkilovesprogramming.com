@@ -39,10 +39,9 @@
   .container{
     height: auto;
   }
-
-
+  
 .index {
-  height: 100%;
+  height: auto;
   width: 100%;
   position: absolute;
   top: 0;
@@ -80,5 +79,20 @@ body{
 .hp_title:before{
   content: "# ";
   color: #409EFF;
+}
+.mydark{
+  background-color: rgb(27, 27, 31)!important;
+}
+.mydark .el-menu-item{
+  color: white!important;
+}
+::v-deep .mydark h1,
+::v-deep .mydark h2,
+::v-deep .mydark h3,
+::v-deep .mydark h4,
+::v-deep .mydark h5,
+::v-deep .mydark h6,
+::v-deep .mydark p {
+  color: white !important;
 }
 </style>
