@@ -1,0 +1,26 @@
+name: test
+
+on: workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-lates
+    steps:
+      - run: echo "build"
+  hello:
+    runs-on: ubuntu-lates
+    steps:
+      - run: echo "hello"
+  hello2:
+    runs-on: ubuntu-lates
+    steps:
+      - run: echho "hello2"
+  hello3:
+    runs-on: ubuntu-lates
+    needs: hello2
+    steps:
+      - run: echho "hello3"
+  hello4:
+    runs-on: ubuntu-lates
+    steps:
+      - run: echo "hello4"
