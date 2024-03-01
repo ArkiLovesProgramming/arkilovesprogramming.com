@@ -1,6 +1,6 @@
 name: test
 
-on: workflow_dispatch
+on: push
 
 jobs:
   build:
@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: hello2
     steps:
-      - run: echho "hello3"
+      - run: echo "hello3"
   hello4:
     runs-on: ubuntu-latest
     steps:
