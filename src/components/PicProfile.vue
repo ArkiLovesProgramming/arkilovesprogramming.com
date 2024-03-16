@@ -1,6 +1,6 @@
 <template>
     <div class="PicProfile">
-        <p class="text1">Hi, I'm Arki! 👋👋👋</p>
+        <p class="text1">Hi, I'm Arki! 👋</p>
         <el-avatar class="shadow-lg mb-4" :size="88" :src="arki_profile_pic" />
         <br>
         <p class="text2">An Experienced Full-Stack Web Developer 🧑‍💻</p>
