@@ -72,6 +72,10 @@
                         <p>JavaScript</p>
                     </div>
                     <div class="tech_stack_icon hoover_scale">
+                        <img src="../assets/TeckIcons/es6.png" alt="ES6">
+                        <p>ES6</p>
+                    </div>
+                    <div class="tech_stack_icon hoover_scale">
                         <i className="ci ci-ts ci-3x"></i>
                         <p>TypeScript</p>
                     </div>
