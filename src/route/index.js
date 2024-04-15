@@ -5,9 +5,8 @@ const ArticlePage = () => import("../pages/ArticlePage.vue")
 const ArticleDetailPage = () => import("../pages/ArticleDetailPage.vue")
 
 const routes = [
-  { path: "/", redirect: "/home" },
   {
-    path: "/home",
+    path: ["/home", "/"],
     name: "home",
     component: HomePage
   },
