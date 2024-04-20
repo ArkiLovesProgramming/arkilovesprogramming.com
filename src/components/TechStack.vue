@@ -56,6 +56,10 @@
                 <div style="text-align: center;"><h5>Front-end Development</h5></div>
                 <div>
                     <div class="tech_stack_icon hoover_scale">
+                        <i className="ci ci-reactjs ci-3x"></i>
+                        <p>React</p>
+                    </div>
+                    <div class="tech_stack_icon hoover_scale">
                         <i className="ci ci-vuejs ci-3x"></i>
                         <p>Vue2 & 3</p>
                     </div>
