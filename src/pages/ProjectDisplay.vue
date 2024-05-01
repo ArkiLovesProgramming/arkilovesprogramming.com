@@ -7,9 +7,10 @@
             <el-timeline style="max-width: ">
                 <el-timeline-item timestamp="Nov 2023-Jan 2024" placement="top">
                     <div class="project_item">
-                        <div class="project_item_left">
+                        <div class="project_item_left" v-loading="chatPicUrlLoading">
                             <a href="https://letschat.arkilovesprogramming.com">
-                                <img src="../assets/ProjectsPic/chat.png" alt="Let's Chat">
+
+                                <img @load="chatPicLoaded" src="../assets/ProjectsPic/chat.png" alt="Let's Chat">
                             </a>
                         </div>
                         <div class="project_item_right">
@@ -34,9 +35,9 @@
                 </el-timeline-item>
                 <el-timeline-item timestamp="Nov 2023-Jan 2024" placement="top">
                     <div class="project_item">
-                        <div class="project_item_left">
+                        <div class="project_item_left" v-loading="smPicUrlLoading">
                             <a href="https://smartsearch.arkilovesprogramming.com">
-                                <img src="../assets/ProjectsPic/sm.png" alt="Smart Search">
+                                <img @load="smPicLoaded" src="../assets/ProjectsPic/sm.png" alt="Smart Search">
                             </a>                            
                         </div>
                         <div class="project_item_right">
@@ -61,9 +62,9 @@
                 </el-timeline-item>
                 <el-timeline-item timestamp="Nov 2023-Jan 2024" placement="top">
                     <div class="project_item">
-                        <div class="project_item_left">
+                        <div class="project_item_left" v-loading="weiPicUrlLoading">
                             <a href="http://weiblog.arkilovesprogramming.com">
-                                <img src="../assets/ProjectsPic/weiblog.png" alt="Smart Search">
+                                <img @load="weiPicLoaded" src="../assets/ProjectsPic/weiblog.png" alt="Smart Search">
                             </a>
                         </div>
                         <div class="project_item_right">
@@ -91,10 +92,31 @@
     </div>
 </template>
 <script>
+import { ref } from 'vue'
 export default {
     name: "ProjectDisplay",
     setup(){
-        
+        let chatPicUrlLoading = ref(true)
+        let smPicUrlLoading = ref(true)
+        let weiPicUrlLoading = ref(true)
+        let chatPicLoaded = ()=>{
+            chatPicUrlLoading.value = false
+        }
+        let smPicLoaded = ()=>{
+            smPicUrlLoading.value = false
+        }
+        let weiPicLoaded = ()=>{
+            weiPicUrlLoading.value = false
+        }
+
+        return {
+            chatPicUrlLoading,
+            smPicUrlLoading,
+            weiPicUrlLoading,
+            chatPicLoaded,
+            smPicLoaded,
+            weiPicLoaded
+        }
     }
 }
 </script>
