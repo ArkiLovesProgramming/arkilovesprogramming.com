@@ -9,8 +9,18 @@
                     <div class="project_item">
                         <div class="project_item_left" v-loading="chatPicUrlLoading">
                             <a href="https://letschat.arkilovesprogramming.com">
-
-                                <img @load="chatPicLoaded" src="../assets/ProjectsPic/chat.png" alt="Let's Chat">
+                                <el-skeleton
+                                    :loading="chatPicUrlLoading"
+                                    animated
+                                    :throttle="250"
+                                >
+                                    <template #template>
+                                        <el-skeleton-item variant="image" style="width: 435.5px; height: 288px" />
+                                    </template>
+                                    <template #default>
+                                        <img @load="chatPicLoaded" src="../assets/ProjectsPic/chat.png" alt="Let's Chat">
+                                    </template>
+                                </el-skeleton>
                             </a>
                         </div>
                         <div class="project_item_right">
@@ -37,7 +47,18 @@
                     <div class="project_item">
                         <div class="project_item_left" v-loading="smPicUrlLoading">
                             <a href="https://smartsearch.arkilovesprogramming.com">
-                                <img @load="smPicLoaded" src="../assets/ProjectsPic/sm.png" alt="Smart Search">
+                                <el-skeleton
+                                    :loading="smPicUrlLoading"
+                                    animated
+                                    :throttle="250"
+                                >
+                                    <template #template>
+                                        <el-skeleton-item variant="image" style="width: 435.5px; height: 288px" />
+                                    </template>
+                                    <template #default>
+                                        <img @load="smPicLoaded" src="../assets/ProjectsPic/chat.png" alt="Let's Chat">
+                                    </template>
+                                </el-skeleton>
                             </a>                            
                         </div>
                         <div class="project_item_right">
@@ -64,7 +85,18 @@
                     <div class="project_item">
                         <div class="project_item_left" v-loading="weiPicUrlLoading">
                             <a href="http://weiblog.arkilovesprogramming.com">
-                                <img @load="weiPicLoaded" src="../assets/ProjectsPic/weiblog.png" alt="Smart Search">
+                                <el-skeleton
+                                    :loading="weiPicUrlLoading"
+                                    animated
+                                    :throttle="250"
+                                >
+                                    <template #template>
+                                        <el-skeleton-item variant="image" style="width: 435.5px; height: 288px" />
+                                    </template>
+                                    <template #default>
+                                        <img @load="weiPicLoaded" src="../assets/ProjectsPic/weiblog.png" alt="Smart Search">
+                                    </template>
+                                </el-skeleton>
                             </a>
                         </div>
                         <div class="project_item_right">
