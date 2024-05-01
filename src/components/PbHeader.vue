@@ -18,7 +18,7 @@
         <el-menu-item index="3" @click="goArticles">
             <span>Articles</span>
         </el-menu-item>
-        <el-menu-item index="4" disabled>Hands-ons</el-menu-item>
+        <el-menu-item index="4" @click="goProjects">Hands-ons</el-menu-item>
         <el-menu-item index="5" disabled>Search</el-menu-item>
         <el-menu-item index="6" disabled>Info</el-menu-item>
     </el-menu>
@@ -32,29 +32,40 @@
 
             const activeIndex = ref('1')
 
-            let LightSwitchOn = ref(false);
+            const LightSwitchOn = ref(false);
 
-            let router = useRouter();
+            const router = useRouter();
 
-            let goHome = ()=>{
+            const goHome = ()=>{
                 router.push("/home");
             }
 
-            let goArticles = ()=>{
+            const goArticles = ()=>{
                 router.push("/articles");
+            }
+
+            const goProjects = ()=>{
+                router.push("/projects")
             }
 
             return {
                 activeIndex,
                 LightSwitchOn,
                 goHome,
-                goArticles
+                goArticles,
+                goProjects
             }
 
         }
     }
 </script>
 <style lang="css" scoped>
+    .el-menu-demo{
+        background-color: white;
+        z-index: 1;
+        position: fixed;
+        width: calc(100% - 40px);
+    }
     .flex-grow {
         flex-grow: 1;
     }

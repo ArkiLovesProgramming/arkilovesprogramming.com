@@ -7,6 +7,7 @@
         <el-main class="container">
           <!-- <HomePage/> -->
           <!-- <ArticleDetailPage/> -->
+          <!-- <ProjectDisplay/> -->
           <router-view></router-view>
         </el-main>
         <el-footer>
@@ -19,11 +20,15 @@
 <script>
   import PbHeader from "./components/PbHeader.vue"
   import PbFooter from "./components/PbFooter.vue"
+  import ArticleDetailPage from "./pages/ArticleDetailPage.vue";
+  import ProjectDisplay from "./pages/ProjectDisplay.vue"
   export default {
     name: 'App',
     components: {
       PbHeader,
-      PbFooter
+      PbFooter,
+      ArticleDetailPage,
+      ProjectDisplay
     },
     setup(){
 
