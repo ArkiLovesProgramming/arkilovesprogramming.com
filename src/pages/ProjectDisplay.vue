@@ -56,7 +56,7 @@
                                         <el-skeleton-item variant="image" style="width: 435.5px; height: 288px" />
                                     </template>
                                     <template #default>
-                                        <img @load="smPicLoaded" src="../assets/ProjectsPic/chat.png" alt="Let's Chat">
+                                        <img @load="smPicLoaded" src="../assets/ProjectsPic/sm.png" alt="Let's Chat">
                                     </template>
                                 </el-skeleton>
                             </a>                            
