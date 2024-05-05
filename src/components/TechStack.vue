@@ -10,6 +10,10 @@
                         <p>Spring Boot</p>
                     </div>
                     <div class="tech_stack_icon hoover_scale">
+                        <i className="ci ci-nodejs ci-3x"></i>
+                        <p>Node.js</p>
+                    </div>
+                    <div class="tech_stack_icon hoover_scale">
                         <i className="ci ci-django-wordmark ci-3x"></i>
                         <p>Django</p>
                     </div>
