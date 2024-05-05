@@ -22,7 +22,8 @@
                         <p>Flask</p>
                     </div>
                     <div class="tech_stack_icon hoover_scale">
-                        <i className="ci ci-expressjs ci-3x"></i>
+                        <!-- <i className="ci ci-expressjs ci-3x"></i> -->
+                        <img src="../assets/TeckIcons/ex.png" alt="Flask">
                         <p>Express.js</p>
                     </div>
                     <div class="tech_stack_icon hoover_scale">
