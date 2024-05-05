@@ -22,6 +22,10 @@
                         <p>Flask</p>
                     </div>
                     <div class="tech_stack_icon hoover_scale">
+                        <i className="ci ci-expressjs ci-3x"></i>
+                        <p>Express.js</p>
+                    </div>
+                    <div class="tech_stack_icon hoover_scale">
                         <i className="ci ci-redis ci-3x"></i>
                         <p>Redis</p>
                     </div>
@@ -66,6 +70,10 @@
                     <div class="tech_stack_icon hoover_scale">
                         <i className="ci ci-vuejs ci-3x"></i>
                         <p>Vue2 & 3</p>
+                    </div>
+                    <div class="tech_stack_icon hoover_scale">
+                        <i className="ci ci-nextjs ci-3x"></i>
+                        <p>Next.js</p>
                     </div>
                     <div class="tech_stack_icon hoover_scale">
                         <i className="ci ci-html ci-3x"></i>
