@@ -22,6 +22,7 @@ Graduated from Memorial University of Newfoundland with a Master's degree in Com
             </el-popover>
             <!-- <img class="x" src="../assets/x.png" alt="X"> -->
             <a class="hoover_scale" :href="wechat_qrcode_url" target="_blank"><img class="wechat-icon" src="../assets/wechat-icon.png" alt="WeChat"></a>
+            <a class="hoover_scale" href="https://leetcode.com/u/betaweiwang/" target="_blank"><img class="wechat-icon" src="/static/img/LeetCode_logo_black.png" alt="LeetCode"></a>
             <a class="hoover_scale" href="https://www.linkedin.com/in/arkilovesprogramming/" target="_blank"><img class="" src="../assets/linked.png" alt="Linked"></a>
         </div>
     </div>
@@ -31,9 +32,9 @@ Graduated from Memorial University of Newfoundland with a Master's degree in Com
         name: "PicProfile",
         setup(){
             const profilepic = "https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png";
-
             const wechat_qrcode_url = require('@/assets/wechat_qrcode.jpg');
-            const arki_profile_pic = require('@/assets/arki_profile_pic.jpg')
+            const arki_profile_pic = require('@/assets/arki_profile_pic.jpg');
+            
 
             return {
                 profilepic,
