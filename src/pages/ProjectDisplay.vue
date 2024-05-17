@@ -5,7 +5,45 @@
         </h4>
         <div class="projects_content_box">
             <el-timeline style="max-width: ">
-                <el-timeline-item timestamp="Nov 2023-Jan 2024" placement="top">
+                <el-timeline-item timestamp="Feb 2024-May 2024" placement="top">
+                    <div class="project_item">
+                        <div class="project_item_left" v-loading="chatPicUrlLoading">
+                            <a href="https://tasksync.arkilovesprogramming.com">
+                                <el-skeleton
+                                    :loading="chatPicUrlLoading"
+                                    animated
+                                    :throttle="250"
+                                >
+                                    <template #template>
+                                        <el-skeleton-item variant="image" style="width: 435.5px; height: 288px" />
+                                    </template>
+                                    <template #default>
+                                        <img @load="chatPicLoaded" src="../assets/ProjectsPic/tasksync.png" alt="Let's Chat">
+                                    </template>
+                                </el-skeleton>
+                            </a>
+                        </div>
+                        <div class="project_item_right">
+                            <div style="display: flex;">
+                                <h5>Task Sync</h5>
+                                <span style="line-height: 24px;">&nbsp;-&nbsp;A synchronized task management tool for team projects</span>
+                            </div>
+                            <div style="margin-bottom: 8px;">
+                                <el-text line-clamp="">
+                                    "Task Sync" is a comprehensive task management tool designed for team projects. Leveraging <el-text tag="b">React.js</el-text> for component-based development, coupled with <el-text tag="b">Redux</el-text> for state management and <el-text tag="b">Axios</el-text> for data retrieval, I crafted a flexible and efficient user interface. Introducing <el-text tag="b">React-DnD</el-text> technology allows users to effortlessly drag and drop tasks, enhancing the system's interactive experience. On the backend, I utilized <el-text tag="b">Node.js</el-text> and <el-text tag="b">Express</el-text> to construct <el-text tag="b">RESTful APIs</el-text>, facilitating efficient server-side processing and route management. To ensure data flexibility, <el-text tag="b">MongoDB</el-text> was chosen as the database server, with <el-text tag="b">Mongoose</el-text> facilitating data interaction. Furthermore, by implementing multi-zone deployment and load balancers, combined with <el-text tag="b">AWS auto-scaling</el-text>, we ensured the system's high availability and scalability. Additionally, the integration of <el-text tag="b">AWS Cognito</el-text> for user authentication and authorization enabled seamless single sign-on across web pages, enhancing system security and user experience. "Task Sync" is committed to providing teams with a comprehensive task collaboration solution, aiding in efficient project task management and achieving collaborative success.
+                                    <!-- Let's Chat is a real-time chat platform built on a microservice architecture. It features a Single Page Application developed with React.js and Material UI for UI rendering and routing. Real-time messages are stored using Spring Data and MongoDB, with communication facilitated between services through Kafka, Amazon SNS, and Amazon SQS. Communication is achieved through WebSocket with Spring Boot, ensuring real-time message streaming. High availability is maintained through multizone deployment and load balancing, with scalability ensured by AWS autoscaling groups. User authentication and authorization are managed using AWS Cognito, enabling Single Sign-on across web pages.       -->
+                                </el-text>
+                            </div>
+                            <div>
+                                Demo Website: 
+                                <a href="https://tasksync.arkilovesprogramming.com">https://tasksync.arkilovesprogramming.com</a><br>
+                                Source Code: 
+                                <a href="https://github.com/ArkiLovesProgramming/task-sync">https://github.com/ArkiLovesProgramming/task-sync</a>
+                            </div>
+                        </div>
+                    </div>
+                </el-timeline-item>
+                <el-timeline-item timestamp="May 2023-Nov 2023" placement="top">
                     <div class="project_item">
                         <div class="project_item_left" v-loading="chatPicUrlLoading">
                             <a href="https://letschat.arkilovesprogramming.com">
@@ -43,7 +81,7 @@
                         </div>
                     </div>
                 </el-timeline-item>
-                <el-timeline-item timestamp="Nov 2023-Jan 2024" placement="top">
+                <el-timeline-item timestamp="Aug 2022-Dec 2022" placement="top">
                     <div class="project_item">
                         <div class="project_item_left" v-loading="smPicUrlLoading">
                             <a href="https://smartsearch.arkilovesprogramming.com">
@@ -76,12 +114,12 @@
                                 Demo Website: 
                                 <a href="https://smartsearch.arkilovesprogramming.com">https://smartsearch.arkilovesprogramming.com</a><br>
                                 Source Code: 
-                                <a href="https://github.com/ArkiLovesProgramming/smart-search">https://smartsearch.arkilovesprogramming.com</a>
+                                <a href="https://github.com/ArkiLovesProgramming/smart-search">https://github.com/ArkiLovesProgramming/smart-search</a>
                             </div>
                         </div>
                     </div>
                 </el-timeline-item>
-                <el-timeline-item timestamp="Nov 2023-Jan 2024" placement="top">
+                <el-timeline-item timestamp="Feb 2022-May 2022" placement="top">
                     <div class="project_item">
                         <div class="project_item_left" v-loading="weiPicUrlLoading">
                             <a href="http://weiblog.arkilovesprogramming.com">
