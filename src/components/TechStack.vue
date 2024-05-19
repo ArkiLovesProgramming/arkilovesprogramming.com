@@ -1,6 +1,6 @@
 <template>
     <div class="TechStack">
-        <h4 class="hp_title">Tech Stack</h4>
+        <h4 class="hp_title">Skill Set</h4>
         <el-row :gutter="2" justify="space-around">
             <el-col :span="8">
                 <div style="text-align: center;"><h5>Back-end Development</h5></div>
