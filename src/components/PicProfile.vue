@@ -22,7 +22,7 @@
             </el-popover>
             <!-- <img class="x" src="../assets/x.png" alt="X"> -->
             <a class="hoover_scale" :href="wechat_qrcode_url" target="_blank"><img class="wechat-icon" src="../assets/wechat-icon.png" alt="WeChat"></a>
-            <a class="hoover_scale" href="https://leetcode.com/u/betaweiwang/" target="_blank"><img class="wechat-icon" src="/static/img/LeetCode_logo_black.png" alt="LeetCode"></a>
+            <a class="hoover_scale" href="https://leetcode.com/u/arkilovesprogramming/" target="_blank"><img class="wechat-icon" src="/static/img/LeetCode_logo_black.png" alt="LeetCode"></a>
             <a class="hoover_scale" href="https://www.linkedin.com/in/arkilovesprogramming/" target="_blank"><img class="" src="../assets/linked.png" alt="Linked"></a>
         </div>
     </div>
